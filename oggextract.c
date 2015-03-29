@@ -1,6 +1,7 @@
 /*
  * Author: Adrian Keet
- * Last modified: October 21, 2012
+ * Bugfix: Max Bruckner
+ * Last modified: March 06, 2015
  *
  * This code is in the public domain. Go ahead and use it for whatever you
  * want. I don't care. :)
@@ -123,6 +124,7 @@ int extract(char *filename)
             break;
 
         oggdata = filedata + pos;
+        pagelen = 4;
         if (ogg_ispage(oggdata))
         {
             pagelen = ogg_getlength(oggdata);
