@@ -17,7 +17,7 @@
 
 int usage()
 {
-    fprintf(stderr, "Usage: oggextract <filename> [<filename> ...]");
+    fprintf(stderr, "Usage: oggextract <filename> [<filename> ...]\n");
     return 255;
 }
 
