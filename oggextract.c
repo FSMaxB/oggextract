@@ -99,7 +99,7 @@ int extract(char *filename)
     }
     if (statdata.st_mode & S_IFDIR)
     {
-        fprintf(stderr, "error: Is a directory\n", filename);
+        fprintf(stderr, "error: '%s' is a directory\n", filename);
         return 1;
     }
     filesize = statdata.st_size;
